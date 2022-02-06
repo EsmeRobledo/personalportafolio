@@ -92,6 +92,7 @@ export default function ContactMe(props) {
                     <div className="img-back">
                         <h4>Send me an Email: 👉</h4>
                         <img src={imgBack} alt="image not found" />
+                        
                     </div>
                     <form onSubmit={submitForm}>
                         <p>{banner}</p>

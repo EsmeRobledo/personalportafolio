@@ -64,7 +64,7 @@ export default function Resume(props) {
     {
       title: " Ecommerce Website ",
       duration: { fromDate: "2022", toDate: "2022" },
-      link: <a href="">PETSHOP</a>,
+      link: <a href="https://github.com/EsmeRobledo/petshoplayout">PETSHOP</a>,
       description:
         `An ecommerce website for showcasing and selling products online with payment system integrated`,
       subHeading: "Technologies Used: React JS, Node, React, Express, Mongo, CSS, HTML",
@@ -180,6 +180,7 @@ export default function Resume(props) {
             link={projectsDetails.link}
           />
         ))}
+        <a href="https://github.com/EsmeRobledo/personalportafolio">Profile project link</a>
       </div>
       ,
       <div className="resume-screen-container" key="interests">
