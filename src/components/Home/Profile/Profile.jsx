@@ -1,5 +1,6 @@
 import React from "react";
 import TypeAnimation from "react-type-animation";
+import ScrollService from "../../../utilities/ScrollService"
 import "./Profile.css";
 
 export default function Profile() {
@@ -38,6 +39,7 @@ export default function Profile() {
                     "Java Developer",
                     3000,
                     "Enthusiastic Dev",
+                    3000,
                   ]}
                   wrapper="h1"
                   repeat={Infinity}
@@ -50,7 +52,8 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Contact Me </button>
+            <button className="btn primary-btn" 
+            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}> Contact Me </button>
             <a href="Resume.pdf" download="Esmeralda Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>

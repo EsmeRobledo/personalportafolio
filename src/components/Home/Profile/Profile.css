@@ -1,146 +1,159 @@
-.profile-container{
+.profile-container {
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-content: center;
     justify-content: center;
+    text-align: center;
     height: 10%;
     min-height: fit-content;
+    background-image: url("../../../assets/home/bg.jpg");
     
 }
 
-.profile-parent{
+.profile-parent {
     display: flex;
     align-items: center;
     color: aliceblue;
 }
-
 .profile-details-name{
     font-size: 24px;
     font-family: "Poppins SemiBold";
+
 }
 
-.profile-detaile-role{
+.profile-details-role {
     display: flex;
     flex-direction: column;
     margin: 14px 0 24px 0;
-}
-
-.profile-detaile-role h1{
-font-size: 40px;
-font-family: cursive;
 
 }
 
-.primary-text{
-    color: white;
+.profile-details-role h1 {
+    font-size: 40px;
+    font-family: "cursive";
+}
+.primary-text {
+    color: (--white);
 }
 
-.highlighted-text{
-    color: tomato;
+.highlighted-text {
+    color: var(--dark-orange);
 }
 
-.profile-role-tagline{
+.profile-role-tagline {
     font-size: 19px;
     margin: 5px 0 0 0;
     font-family: "Poppins Light";
+
 }
 
-.profile-options .highlighted-btn:hover{
+.profile-options .highlighted-btn {
+    margin: 0 0 0 28px; 
+    border-radius: 12px solid white;
+}
+
+
+.profile-options .highlighted-btn:hover {
     margin: 0 0 0 28px;
     background-color: cornsilk;
-    color: black;
+    color: #111;
 }
 
-.profile-picture{
+.profile-picture {
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0 1px 0 0 var(--white);
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
     border-radius: 50%;
     height: 380px;
     width: 380px;
-    margin: 0 0 0 100px;
+    margin: 0 0px 0 100px;
 }
-
-.profile-picture-background{
+.profile-picture-background {
     height: 92%;
     width: 92%;
     background-image: url("../../../assets/home/Esme1.jpg");
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:top;
 }
-
-.profile-picture-background:hover{
+.profile-picture-background:hover {
     transform: scale(1.07);
     transition: 1s ease-out;
 }
 
-.colz .colz-icon{
+.colz .colz-icon i {
     color: white;
-    padding: 8px;
+    padding: 10px;
     padding-left: 0px;
 }
 
-.colz .colz-icon i:hover{
-transform: scale(2.5);
-
+.colz .colz-icon i:hover {
+    transform: scale(1.7);
 }
 
-@media screen and (max-width: 1110px){
-    .profile-picture{
-        margin:  0 0 0 80px;
+/* ipad pro */
+@media screen and (max-width:  1110px) {
+    .profile-picture {
+        margin: 0 0px 0 80px;
     }
-    .profile-details-name{
+    .profile-details-name {
+        font-size: 20px;
+    }
+    .profile-details-role .primary-text {
         font-size: 12px;
     }
-    .profile-options .btn{
+    .profile-options .btn {
         width: 120px;
         padding: 11px 0;
         z-index: 700;
+       
+    }
+
+
+}
+
+@media screen and (max-width:  910px) { 
+.profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+
     }
 }
 
-@media screen and (max-width: 910px){
-    .profile-picture{
-        height: 320px;
-        width: 320px;
-        margin:  0 0 0 4px;
-    }
-}
-
-@media screen and (max-width: 810px){
-    .profile-picture{
+@media screen and (max-width:  810px) {
+    .profile-picture {
         margin: 0 !important;
     }
-    .profile-parent{
+    .profile-parent {
         flex-direction: column-reverse;
         margin: 40px 0 0 0;
     }
     .profile-options{
         display: flex;
         justify-content: space-between;
+
     }
-    .profile-details{
-        margin: 25px 0 0;
+
+    .profile-details {
+        margin: 25px  0 0;
     }
-    .profile-options .highlighted-btn{
+    .profile-options .highlighted-btn {
         margin: 0 !important;
     }
-    .profile-options, .profile-detaile-role{
+    .profile-options .profile-details-role {
         text-align: center;
     }
 }
-
-@media screen and (max-width: 375px){
-    .profile-picture{
+@media screen and (max-width:  375px) { 
+    .profile-picture {
         height: 275px;
         width: 275px;
         margin-top: -90px;
     }
-    .profile-details{
-        width: 90%;
+    .profile-details {
+        width: 95%;
     }
 }
 

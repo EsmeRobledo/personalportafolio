@@ -14,7 +14,7 @@ export default class ScrollService{
 
     }
     scrollToHireMe = () =>{
-        let ccontactMeScreen = document.getElementById("Contact Me")
+        let ccontactMeScreen = document.getElementById("ContactMe")
         if(!ccontactMeScreen) return;
         ccontactMeScreen.scrollIntoView({behavior: "smooth"})
     }
