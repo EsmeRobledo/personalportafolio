@@ -1,0 +1,94 @@
+.NavWrapper{
+    background: 'black';
+    height: 80px;
+    background: 'black';
+    display: flex;
+    margin-top: -80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: sticky;
+    border: none;
+    z-index: 10;
+    top: 5px;
+
+}
+
+.NavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.NavLogo {
+    color: red;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-family: 'Yuji Boku', serif;
+    margin-left: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+    
+.MobileIcon {
+    display: none;
+}
+
+   
+    @media screen and (max-width: 768px){
+        .MobileIcon{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-100%, 60%);
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        .NavMenu{
+            display: none;
+        }
+        
+    }
+
+.NavMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+    
+
+.NavItem{
+    height: 80px;
+}
+
+.NavLinks{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+    
+
+   
+
+@media screen and (max-width: 960px){
+    .NavWrapper{
+        transition: 0.8s all ease;
+    }
+    
+}
